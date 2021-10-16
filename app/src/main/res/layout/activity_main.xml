@@ -16,6 +16,7 @@
         android:layout_marginBottom="8dp"
         android:backgroundTint="#5A3085"
         android:fontFamily="sans-serif-black"
+        android:onClick="startMatch"
         android:text="Match"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
