@@ -37,6 +37,12 @@ public class JsonUtility {
     }
 
     public static Object ReadObjectFromURL(URL url, Class clazz) {
-
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            return objectMapper.readValue(url, clazz);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
