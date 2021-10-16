@@ -1,9 +1,19 @@
 package io.github.mczeyrox.footballmanager.utility;
 
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class JsonUtility {
 
@@ -24,5 +34,9 @@ public class JsonUtility {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static Object ReadObjectFromURL(URL url, Class clazz) {
+
     }
 }
