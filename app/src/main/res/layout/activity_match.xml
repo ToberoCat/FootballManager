@@ -6,6 +6,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#373737"
+    android:foregroundTint="#FFFFFF"
     tools:context=".Match">
+
+    <Button
+        android:id="@+id/match_startmatch_button"
+        android:layout_width="374dp"
+        android:layout_height="138dp"
+        android:backgroundTint="#5A3085"
+        android:fontFamily="sans-serif-black"
+        android:foregroundTint="#FFFFFF"
+        android:text="Start Match"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="75dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="endMatch"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+    <ScrollView
+        android:layout_width="166dp"
+        android:layout_height="444dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="93dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="166dp"
+        android:layout_height="444dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/match_startmatch_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
