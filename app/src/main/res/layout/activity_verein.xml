@@ -18,4 +18,58 @@
         android:textSize="60sp"
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="577dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="172dp"
+        android:layout_height="173dp"
+        app:srcCompat="@drawable/logo_example"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <Button
+        android:id="@+id/Verein_name_button"
+        android:layout_width="172dp"
+        android:layout_height="85dp"
+        android:backgroundTint="#5A3085"
+        android:fontFamily="sans-serif-black"
+        android:text="Name"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/verein_logo_button"
+        android:layout_width="172dp"
+        android:layout_height="85dp"
+        android:backgroundTint="#5A3085"
+        android:fontFamily="sans-serif-black"
+        android:text="Logo"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:id="@+id/barcelona_textView"
+        android:layout_width="172dp"
+        android:layout_height="173dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Barcelona"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="132dp"
+        android:layout_height="117dp"
+        android:backgroundTint="#000B0505"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/back_button"
+        tools:layout_editor_absoluteX="-21dp"
+        tools:layout_editor_absoluteY="-19dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
