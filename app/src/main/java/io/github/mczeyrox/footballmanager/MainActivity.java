@@ -23,4 +23,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Match.class);
         startActivity(intent);
     }
+    public void verein(View view) {
+        Intent intent = new Intent(this, Verein.class);
+        startActivity(intent);
+    }
 }

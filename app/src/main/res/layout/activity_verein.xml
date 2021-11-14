@@ -11,21 +11,27 @@
         android:id="@+id/Verein_Stats_button"
         android:layout_width="374dp"
         android:layout_height="138dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#5A3085"
         android:fontFamily="sans-serif-black"
         android:text="Stats"
         android:textColor="#FFFFFF"
         android:textSize="60sp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="577dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="172dp"
         android:layout_height="173dp"
-        app:srcCompat="@drawable/logo_example"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="157dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_example" />
 
     <Button
         android:id="@+id/Verein_name_button"
@@ -36,8 +42,12 @@
         android:text="Name"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509" />
 
     <Button
         android:id="@+id/verein_logo_button"
@@ -48,28 +58,37 @@
         android:text="Logo"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="328dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509" />
 
     <TextView
         android:id="@+id/barcelona_textView"
         android:layout_width="172dp"
         android:layout_height="173dp"
+        android:layout_marginTop="156dp"
         android:fontFamily="sans-serif-black"
         android:text="Barcelona"
         android:textColor="#FFFFFF"
         android:textSize="60sp"
-        tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="157dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="132dp"
         android:layout_height="117dp"
+        android:layout_marginEnd="276dp"
         android:backgroundTint="#000B0505"
         android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button"
-        tools:layout_editor_absoluteX="-21dp"
-        tools:layout_editor_absoluteY="-19dp" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

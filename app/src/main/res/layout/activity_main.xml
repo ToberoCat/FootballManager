@@ -77,6 +77,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="110dp"
         android:backgroundTint="#5A3084"
+        android:onClick="verein"
         android:text="Verein"
         android:textColorHint="#48DA6F"
         android:textSize="24sp"
