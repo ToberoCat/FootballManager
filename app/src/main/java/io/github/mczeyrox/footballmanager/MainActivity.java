@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //DataContainer.init();
+        DataContainer.init();
 
         setContentView(R.layout.activity_main);
     }
