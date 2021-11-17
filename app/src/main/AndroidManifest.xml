@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.mczeyrox.footballmanager">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,16 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity
-            android:name=".Running_Match"
+            android:name=".client.activities.CreateClubActivity"
             android:exported="false" />
         <activity
-            android:name=".Verein"
-            android:exported="false" />
-        <activity
-            android:name=".Match"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".client.activities.LoadingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +23,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".client.activities.RunningMatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".client.activities.VereinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".client.activities.MatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".client.activities.MainActivity"
+            android:exported="false"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

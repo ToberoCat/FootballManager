@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Tobias/Desktop/Development/Android/FootballManager/app/src/main/res/layout/activity_create_club.xml" value="0.23731884057971014" />
+        <entry key="..\:/Users/Tobias/Desktop/Development/Android/FootballManager/app/src/main/res/layout/activity_loading.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/Tobias/Desktop/Development/Android/FootballManager/app/src/main/res/layout/activity_match.xml" value="0.4" />
         <entry key="..\:/Users/marco/OneDrive/Dokumente/GitHub/FootballManager/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/marco/OneDrive/Dokumente/GitHub/FootballManager/app/src/main/res/layout/activity_match.xml" value="0.25" />
         <entry key="..\:/Users/marco/OneDrive/Dokumente/GitHub/FootballManager/app/src/main/res/layout/activity_running_match.xml" value="0.25416666666666665" />
