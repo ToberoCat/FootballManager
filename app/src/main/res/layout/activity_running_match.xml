@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Running_Match">
+    tools:context=".client.activities.RunningMatchActivity">
 
     <TextView
         android:id="@+id/running_match_time"

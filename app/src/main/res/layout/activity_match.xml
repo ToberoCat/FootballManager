@@ -5,9 +5,7 @@
     android:id="@+id/back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:foregroundTint="#FFFFFF"
-    tools:context=".Match">
+    tools:context=".client.activities.MatchActivity">
 
     <Button
         android:id="@+id/match_startmatch_button"
@@ -18,7 +16,7 @@
         android:foregroundTint="#FFFFFF"
         android:onClick="startMatch"
         android:text="Start Match"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/design_default_color_on_secondary"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,26 +31,30 @@
         android:layout_height="346dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="192dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/match_startmatch_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical"/>
     </ScrollView>
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="164dp"
         android:layout_height="346dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@+id/match_startmatch_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
@@ -70,25 +72,48 @@
         android:background="#FFFFFF"
         android:onClick="MainMenu"
         android:text="Back"
+        android:textColor="#757575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/main_match_Team1"
-        android:layout_width="307dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="43dp"
-        android:fontFamily="sans-serif"
+        android:id="@+id/match_enemy_team"
+        android:layout_width="164dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Enemy"
+        android:textSize="25dp"
         android:gravity="center"
-        android:text="Team 1 vs. Team 2"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        app:autoSizeTextType="none"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintVertical_bias="0.858" />
+
+    <TextView
+        android:id="@+id/match_own_team"
+        android:layout_width="164dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:text="You"
+        android:textSize="25dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
+    <TextView
+        android:id="@+id/match_vs"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:text="vs"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/match_own_team"
+        app:layout_constraintStart_toEndOf="@+id/match_enemy_team"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
