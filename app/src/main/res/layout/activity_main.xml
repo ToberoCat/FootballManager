@@ -48,6 +48,7 @@
         android:layout_marginTop="110dp"
         android:layout_marginEnd="6dp"
         android:backgroundTint="#5A3084"
+        android:onClick="enterShop"
         android:text="Shop"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/Tabellen_button"
